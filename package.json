@@ -1,0 +1,22 @@
+{
+  "name": "asana-contacts",
+  "version": "1.0.0",
+  "description": "Integrating Asana and Google Contacts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwickett/asana-contacts.git"
+  },
+  "author": "Michael Wickett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mwickett/asana-contacts/issues"
+  },
+  "homepage": "https://github.com/mwickett/asana-contacts#readme",
+  "dependencies": {
+    "asana": "^0.14.1"
+  }
+}
