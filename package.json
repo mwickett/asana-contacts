@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mwickett/asana-contacts#readme",
   "dependencies": {
-    "asana": "^0.14.1"
+    "asana": "^0.14.1",
+    "dotenv": "^2.0.0"
   }
 }
