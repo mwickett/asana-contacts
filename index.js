@@ -13,12 +13,15 @@ client.users.me().then(function(user) {
   var workspaceName = user.workspaces[0].name;
   console.log("User: " + userName + " has a workspace called " + workspaceName + " which has an ID of " + workspaceId);
 
-  return client.projects.findByWorkspace(workspaceId)
-})
-.then(function (response){
-  console.log(response.data);
-})
+  return client.projects.findByWorkspace(workspaceId).then(function(collection) {
+    //Asking for "0" returns everything
+    collection.fetch(0).then(function(name) {
+
+      console.log(typeof name);
+    });
+  });
+});
+
 
 
 //Try out API calls to retrieve list of projects and parse out Project name and project email address
-
